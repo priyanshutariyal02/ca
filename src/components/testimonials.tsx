@@ -12,7 +12,7 @@ const Testimonials = () => {
     },
     {
       name: "John Doe",
-      feedback: "This service is outstanding! Highly recommended.",
+      feedback: "This service is outstanding Highly recommended.",
       designation: "CEO, Company Inc.",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy67Hr1Pv-Qpie8F9yXu-6eTqJNNIDJmg_K5KfSuweEfmIpAs2gTk8qjaARGu_17SoETE&usqp=CAU",

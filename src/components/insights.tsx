@@ -78,14 +78,14 @@ const Insight = () => {
               </div>
             </div>
             <div className="w-full h-full text-lg flex justify-between flex-col p-2 ">
-              <p className="">
+              <p>
                 {blogData.desc.split(" ").length > 11
                   ? blogData.desc.split(" ").slice(0, 11).join(" ") + "..."
                   : blogData.desc}
               </p>
 
               <div className="w-full flex justify-between items-center">
-                <Link href={""} className="text-primary text-xl font-semibold">
+                <Link href={"/insight"} className="text-primary text-xl font-semibold">
                   Read More
                 </Link>
                 <p className="text-neutral-500 flex items-center gap-1">

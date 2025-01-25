@@ -102,7 +102,7 @@ const Navbar = () => {
                 : undefined
             } // Use onClick for sections
             className={`hover:text-primary px-2 py-2 duration-200 rounded-full ${
-              active === item.link ? "text-primary" : ""
+              active === item.link && "text-primary"
             }`}
           >
             {item.name}
