@@ -8,7 +8,7 @@ const Testimonials = () => {
       feedback:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus animi quidem.",
       designation: "Asian Tourist",
-      image: "https://evolve2023.in/wp-content/uploads/2014/10/speaker-3.jpg", // Replace with actual image URL
+      image: "https://evolve2023.in/wp-content/uploads/2014/10/speaker-3.jpg",
     },
     {
       name: "John Doe",
@@ -39,7 +39,7 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true, // Enable autoplay
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
     responsive: [
@@ -68,7 +68,7 @@ const Testimonials = () => {
     <div className="w-full py-16 px-20  text-gray-800">
       <div className="w-full px-4">
         <h1 className="text-7xl  text-left mb-3 flex items-end font-semibold">
-          Testimonials <p className="w-28 h-2 bg-primary"></p>
+          Testimonials <p className="w-28 h-2 bg-primary"/>
         </h1>
         <p className="text-neutral-600 mb-12 text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
