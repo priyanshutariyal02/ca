@@ -1,11 +1,5 @@
 import React from "react";
 import { NumberTicker } from "./ui/number-ticker";
-import {
-  IconAward,
-  IconChartBarPopular,
-  IconSchool,
-  IconWorldShare,
-} from "@tabler/icons-react";
 
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";

@@ -6,7 +6,6 @@ import {
   IconZoomScan,
 } from "@tabler/icons-react";
 import React, { ReactNode } from "react";
-import { ShinyButton } from "./ui/shiny-button";
 import Link from "next/link";
 
 interface ServiceContent {

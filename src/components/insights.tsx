@@ -1,4 +1,4 @@
-import { IconArrowRight, IconBackground, IconClock } from "@tabler/icons-react";
+import { IconBackground, IconClock } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
