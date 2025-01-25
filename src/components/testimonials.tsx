@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 
@@ -68,7 +69,7 @@ const Testimonials = () => {
     <div className="w-full py-16 px-20  text-gray-800">
       <div className="w-full px-4">
         <h1 className="text-7xl  text-left mb-3 flex items-end font-semibold">
-          Testimonials <p className="w-28 h-2 bg-primary"/>
+          Testimonials <p className="w-28 h-2 bg-primary" />
         </h1>
         <p className="text-neutral-600 mb-12 text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
@@ -80,10 +81,12 @@ const Testimonials = () => {
             <div key={index} className="p-4">
               <div className="p-6 shadow-lg rounded-md bg-white text-center">
                 <div className="flex justify-center mb-4">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-20 h-20 rounded-full object-cover border-4 border-primary"
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <h1 className="text-xl font-semibold">{testimonial.name}</h1>
@@ -91,7 +94,7 @@ const Testimonials = () => {
                   {testimonial.designation}
                 </p>
                 <p className="text-lg italic mb-4 text-neutral-600">
-                  "{testimonial.feedback}"
+                  {testimonial.feedback}
                 </p>
               </div>
             </div>
