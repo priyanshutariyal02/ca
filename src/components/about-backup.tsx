@@ -9,10 +9,10 @@ const aboutPara: {
     para: "In 2015, a vision took root when Mr. Ankit Jain, our esteemed Managing Partner, laid the cornerstone of Jain Ankit and Co, Chartered Accountants. What began as a sole proprietorship blossomed into a partnership firm, enriched by the expertise of seasoned professionals, each bringing a wealth of knowledge garnered across diverse industries.",
   },
   {
-    para: "Nestled in the heart of the vibrant city of Dehradun, Uttarakhand, our headquarters serve as the nexus of our operations. However, our journey doesn't end there. With a keen eye on expansion and a commitment to serving our clients more effectively, we ventured into the dynamic landscape of the National Capital Region (NCR), establishing our inaugural branch in Gurugram, Haryana.",
+    para: "Nestled in the heart of the vibrant city of Dehradun, Uttarakhand, our headquarters serve as the nexus of our operations. However, our journey doesn&apos;t end there. With a keen eye on expansion and a commitment to serving our clients more effectively, we ventured into the dynamic landscape of the National Capital Region (NCR), establishing our inaugural branch in Gurugram, Haryana.",
   },
   {
-    para: "At JAC, we cherish the uniqueness of every client. Our approach is rooted in understanding the distinct needs of each entity we serve. Through thoughtful dialogue and meticulous attention to detail, we craft tailored solutions designed to address our clients' specific challenges and aspirations.",
+    para: "At JAC, we cherish the uniqueness of every client. Our approach is rooted in understanding the distinct needs of each entity we serve. Through thoughtful dialogue and meticulous attention to detail, we craft tailored solutions designed to address our client&apos;s specific challenges and aspirations.",
   },
 ];
 

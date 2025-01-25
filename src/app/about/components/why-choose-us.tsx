@@ -17,7 +17,7 @@ const chooseData = [
   },
   {
     title: "Customized for You",
-    desc: "No two businesses are alike. That&apos;s why we offer flexible and scalable solutions, designed to fit your specific operational needs, whether you're a startup or an established enterprise.",
+    desc: "No two businesses are alike. That&apos;s why we offer flexible and scalable solutions, designed to fit your specific operational needs, whether you&apos;re a startup or an established enterprise.",
     icon: <IconSettings size={30} className="w-16 h-16" stroke={1.5} />,
   },
   {
