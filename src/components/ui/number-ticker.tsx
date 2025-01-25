@@ -4,11 +4,12 @@ import { useInView, useMotionValue, useSpring } from "motion/react";
 import { ComponentPropsWithoutRef, useEffect, useRef } from "react";
 
 import { cn } from "../../../lib/utils";
+import { IconPlus } from "@tabler/icons-react";
 
 interface NumberTickerProps extends ComponentPropsWithoutRef<"span"> {
   value: number;
   direction?: "up" | "down";
-  delay?: number; // delay in s
+  delay?: number;
   decimalPlaces?: number;
 }
 
@@ -29,10 +30,11 @@ export function NumberTicker({
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   useEffect(() => {
-    isInView &&
+    if (isInView) {
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
       }, delay * 1000);
+    }
   }, [motionValue, isInView, delay, value, direction]);
 
   useEffect(
@@ -57,7 +59,9 @@ export function NumberTicker({
       {...props}
     >
       <span ref={ref}></span>
-      <span>+</span>
+      <span>
+        <IconPlus size={20} className="w-8 h-8" />
+      </span>
     </span>
   );
 }
