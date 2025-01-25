@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import CustomCursor from "@/components/custom-cursor";
+import localFont from "next/font/local";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "react-vertical-timeline-component/style.min.css";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const product_sans = localFont({
+  src: [
+    {
+      path: "./fonts/ProductSans-Thin.ttf",
+      weight: "300",
+    },
+    {
+      path: "./fonts/ProductSans-Light.ttf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/ProductSans-Regular.ttf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/ProductSans-Bold.ttf",
+      weight: "800",
+    },
+    {
+      path: "./fonts/ProductSans-Black.ttf",
+      weight: "900",
+    },
+  ],
+  variable: "--font-pro",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +44,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${product_sans.variable} antialiased bg-neutral-50`}>
+        <>
+          <CustomCursor />
+          
+          {children}
+        </>
       </body>
     </html>
   );
