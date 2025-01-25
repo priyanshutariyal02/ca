@@ -53,7 +53,7 @@ const Insight = () => {
           ideas that shape the future and drive success in a rapidly evolving
           world.
         </p>
-        <Link href={""}>
+        <Link href={"/insight"}>
           <InteractiveHoverButton>Explore More</InteractiveHoverButton>
         </Link>
       </div>

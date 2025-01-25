@@ -23,7 +23,6 @@ const ByondNumbers = () => {
         {/* Statistics Section */}
         <div className="w-full max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="flex flex-col items-center gap-4">
-            {/* <IconWorldShare stroke={1} size={30} className="text-[#FCBC45] w-20 h-20" /> */}
             <LanguageOutlinedIcon className="text-[#FCBC45] w-20 h-20" />
             <NumberTicker
               value={100}
@@ -33,7 +32,6 @@ const ByondNumbers = () => {
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            {/* <IconAward size={40} stroke={1} className="text-[#FCBC45] w-20 h-20" /> */}
             <VerifiedOutlinedIcon className="text-[#FCBC45] w-20 h-20" />
             <NumberTicker
               value={15}
@@ -43,7 +41,6 @@ const ByondNumbers = () => {
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            {/* <IconSchool size={40} stroke={1} className="text-[#FCBC45] w-20 h-20" /> */}
             <SchoolOutlinedIcon className="text-[#FCBC45] w-20 h-20" />
             <NumberTicker
               value={500}
@@ -55,11 +52,6 @@ const ByondNumbers = () => {
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            {/* <IconChartBarPopular
-              size={40}
-              stroke={1}
-              className="text-[#FCBC45] w-20 h-20"
-            /> */}
             <BusinessCenterOutlinedIcon className="text-[#FCBC45] w-20 h-20" />
             <NumberTicker
               value={85}
