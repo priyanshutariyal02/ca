@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, JSX } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../lib/utils";
 
