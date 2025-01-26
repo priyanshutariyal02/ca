@@ -267,7 +267,7 @@ const data = [
             ✅
             <span>
               <strong>Mergers, Acquisitions, and Fundraising Support:</strong>{" "}
-              If you're considering expansion or fundraising, we provide
+              If you&apos;re considering expansion or fundraising, we provide
               guidance and financial analysis to ensure you make the right
               decisions.
             </span>
