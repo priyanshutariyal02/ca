@@ -4,11 +4,11 @@ import React, { useState, useEffect } from "react";
 const navLinks = [
   {
     name: "About Us",
-    link: "about",
+    link: "/#about",
   },
   {
     name: "Services",
-    link: "service",
+    link: "/#service",
   },
   {
     name: "Case Studies",
@@ -20,7 +20,7 @@ const navLinks = [
   },
   {
     name: "Contact",
-    link: "contact",
+    link: "/contact",
   },
 ];
 
@@ -48,7 +48,7 @@ const Navbar = () => {
     const currentScrollY = window.scrollY;
 
     // Set navbar transparency
-    setIsTransparent(currentScrollY < window.innerHeight - 500);
+    setIsTransparent(currentScrollY < window.innerHeight);
 
     // Handle navbar visibility on scroll direction
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
@@ -69,8 +69,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full flex justify-between items-center px-5 md:px-20 py-5 sticky top-0 z-30 transition-all duration-300 ${
-        isTransparent ? "bg-transparent" : "bg-black"
+      className={`w-full flex justify-between items-center px-5 md:px-20 py-5 sticky top-0 transition-all duration-300 z-50 ${
+        isTransparent ? "bg-[#171717]" : "bg-[#171717]"
       } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Brand Logo */}

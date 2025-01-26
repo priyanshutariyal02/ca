@@ -44,12 +44,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             idesigned to simplify financial management and drive buiness success
           </p>
         </div>
-        <Link
+        {/* <Link
           href={"/"}
           className="bg-primary text-white text-xl px-4 py-2 rounded-md duration-200 hover:bg-amber-500"
         >
           Home
-        </Link>
+        </Link> */}
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

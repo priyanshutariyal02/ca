@@ -33,7 +33,7 @@ const blogData = [
 
 const Insight = () => {
   return (
-    <div className="w-full min-h-screen px-20 py-16 flex">
+    <div className="w-full min-h-screen px-20 py-16 flex" id="insights">
       <div className="flex-1 p-5 flex flex-col justify-evenly relative">
         {/* Icon Background */}
         <IconBackground
