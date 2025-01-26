@@ -41,7 +41,7 @@ export const tabs = [
             cloud-based accounting system with migration of past financial data.
           </li>
           <li>
-            <strong>Real-Time Access:</strong> Automated system for recording
+            <strong>Real-Time Access:</strong> Automated system for recording 
             daily transactions and providing real-time access to financial
             records.
           </li>
@@ -151,7 +151,7 @@ export const tabs = [
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
         <p className="max-w-4xl text-lg">
-          As a result of using PrimeVista Global’s Bank Reconciliation service,
+          As a result of using PrimeVista Global&apos;s Bank Reconciliation service,
           XYZ Manufacturing Co. experienced:
         </p>
         <ul className="list-disc pl-6 max-w-4xl text-lg">
@@ -237,7 +237,7 @@ export const tabs = [
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
         <p className="max-w-4xl text-lg">
-          By choosing PrimeVista Global’s Payroll & Salary service, DEF
+          By choosing PrimeVista Global&apos;s Payroll & Salary service, DEF
           Consulting experienced:
         </p>
         <ul className="list-disc pl-6 max-w-4xl text-lg">
@@ -298,7 +298,7 @@ export const tabs = [
 
         <h2 className="text-3xl font-semibold">The Solution:</h2>
         <p className="max-w-4xl text-lg">
-          GHI Retail Group chose PrimeVista Global’s Virtual CFO service to
+          GHI Retail Group chose PrimeVista Global&apos;s Virtual CFO service to
           provide the necessary strategic leadership and financial expertise:
         </p>
         <ul className="list-disc pl-6 max-w-4xl text-lg">

@@ -214,7 +214,7 @@ const data = [
           Our Virtual CFO service provides you with high-level financial
           expertise and strategic guidance, without the expense of a full-time
           Chief Financial Officer. This service is designed for growing
-          businesses that need expert financial management but don’t require a
+          businesses that need expert financial management but don&apos;t require a
           dedicated CFO.
         </p>
         <p className="text-neutral-600 text-lg mb-8">
@@ -297,7 +297,7 @@ const data = [
             ✅
             <span>
               <strong>Data Collection & Cleaning:</strong> We collect and clean
-              your business data to ensure that it’s accurate and ready for
+              your business data to ensure that it&apos;s accurate and ready for
               analysis.
             </span>
           </li>
