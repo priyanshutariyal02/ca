@@ -66,10 +66,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full py-16 px-20  text-gray-800">
-      <div className="w-full px-4">
-        <h1 className="text-7xl  text-left mb-3 flex items-end font-semibold">
-          Testimonials <p className="w-28 h-2 bg-primary" />
+    <div className="w-full py-10 lg:py-16 px-5 lg:px-20  text-gray-800">
+      <div className="w-full">
+        <h1 className="text-4xl lg:text-7xl  text-left mb-3 flex items-end font-semibold">
+          Testimonials <p className="w-20 lg:w-28 h-2 bg-primary" />
         </h1>
         <p className="text-neutral-600 mb-12 text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab

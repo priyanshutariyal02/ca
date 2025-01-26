@@ -33,14 +33,22 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 flex justify-between items-start">
-        <div>
-          <h2 className="text-2xl mb-4 max-w-4xl text-primary font-semibold">
+        <div className="max-w-4xl flex flex-col gap-5">
+          <h2 className="text-2xl  max-w-4xl text-primary font-semibold">
             Our Services
           </h2>
-          <h1 className="text-6xl">What Services We Offer</h1>
-          <p className="text-neutral-600 text-sm md:text-base max-w-xl mt-3">
-            At Prime Vista Global, we offer a comperhensive range of services
-            idesigned to simplify financial management and drive buiness success
+          <h1 className="text-3xl md:text-4xl lg:text-6xl">
+            Tailored Financial Solutions for Every Need
+          </h1>
+          <p className="text-neutral-600 text-base md:text-xl mt-3">
+            At PrimeVista Global, we offer a comprehensive range of services
+            designed to simplify your financial management and fuel your
+            business growth. From bookkeeping and payroll to data analytics and
+            tax preparation, our expert team delivers accurate, timely, and
+            scalable solutions to meet the unique needs of your business. With a
+            focus on efficiency, precision, and personalized attention, we help
+            you navigate complex financial landscapes with confidence, so you
+            can focus on what matters most—your success.
           </p>
         </div>
         {/* <Link
@@ -55,7 +63,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className="flex justify-start pt-10 md:pt-30 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-primary  flex items-center justify-center">

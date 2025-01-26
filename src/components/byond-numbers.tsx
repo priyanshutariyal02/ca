@@ -12,7 +12,7 @@ const ByondNumbers = () => {
       <div className="w-full bg-gradient-to-b from-[#171717] to-[#0d0d0d] py-12 flex flex-col items-center text-white gap-12">
         {/* Heading Section */}
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary">
             Beyond Numbers
           </h1>
           <p className="mt-2 text-neutral-300 text-lg md:text-xl">
@@ -23,39 +23,39 @@ const ByondNumbers = () => {
         {/* Statistics Section */}
         <div className="w-full max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="flex flex-col items-center gap-4">
-            <LanguageOutlinedIcon className="text-[#FCBC45] text-[5.5rem]" />
+            <LanguageOutlinedIcon className="text-[#FCBC45] text-5xl lg:text-[5.5rem]" />
             <NumberTicker
               value={100}
-              className="text-4xl md:text-5xl font-bold tracking-tight text-white"
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white"
             />
-            <span className="text-lg text-[#FCBC45]">Clients Globally</span>
+            <span className="text-base lg:text-lg text-[#FCBC45]">Clients Globally</span>
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            <VerifiedOutlinedIcon className="text-[#FCBC45] text-[5.5rem]" />
+            <VerifiedOutlinedIcon className="text-[#FCBC45] text-5xl lg:text-[5.5rem]" />
             <NumberTicker
               value={15}
-              className="text-4xl md:text-5xl font-bold tracking-tight text-white"
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white"
             />
-            <span className="text-lg text-[#FCBC45]">Years of Experience</span>
+            <span className="text-base lg:text-lg text-[#FCBC45]">Years of Experience</span>
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            <SchoolOutlinedIcon className="text-[#FCBC45] text-[5.5rem]" />
+            <SchoolOutlinedIcon className="text-[#FCBC45] text-5xl lg:text-[5.5rem]" />
             <NumberTicker
               value={500}
-              className="text-4xl md:text-5xl font-bold tracking-tight text-white"
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white"
             />
-            <span className="text-lg text-[#FCBC45]">
+            <span className="text-base lg:text-lg text-[#FCBC45]">
               Talented Professionals
             </span>
           </div>
 
           <div className="flex flex-col items-center gap-4">
-            <BusinessCenterOutlinedIcon className="text-[#FCBC45] text-[5.5rem]" />
+            <BusinessCenterOutlinedIcon className="text-[#FCBC45] text-5xl lg:text-[5.5rem]" />
             <NumberTicker
               value={85}
-              className="text-4xl md:text-5xl font-bold tracking-tight text-white"
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white"
             />
             <span className="text-lg md:text-xl text-[#FCBC45]">
               Referral Business

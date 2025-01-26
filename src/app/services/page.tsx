@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full ">
+      <div className="w-full">
         {/* <div className="w-full flex items-center justify-center flex-col gap-8">
         <h1 className="text-7xl mx-auto text-center mt-10 font-bold text-stone-700">
         Prime<span className="text-primary">Vista</span>

@@ -49,32 +49,32 @@ const content: ServiceContent[] = [
 const Services = () => {
   return (
     <div
-      className="w-full mt-[27rem] py-20 flex justify-start gap-20  flex-col px-20"
+      className="w-full mt-[40rem] lg:mt-[27rem] py-20 flex justify-start gap-20  flex-col px-5 lg:px-20"
       id="service"
     >
       {/* Heading */}
       <div className="w-full flex flex-col gap-4 ">
         <h1 className=" font-bold text-2xl text-primary">Our Services</h1>
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-5 lg:gap-0 lg:justify-between lg:items-center">
           <h1 className="text-4xl  font-semibold">What Services We Offer</h1>
-          <p className="text-xl max-w-2xl text-center">
+          <p className="text-xl max-w-2xl text-left lg:text-center">
             At Prime Vista Global, we offer a comperhensive range of services
             idesigned to simplify financial management and drive buiness success
           </p>
           <Link
             href={"/services"}
-            className="bg-primary text-white px-4 py-2 text-lg font-semibold rounded-md"
+            className="bg-primary text-white px-4 py-2 text-lg font-semibold rounded-lg"
           >
             All Services
           </Link>
         </div>
       </div>
       {/* Testimonials */}
-      <div className="w-full grid grid-cols-3 items-center justify-center gap-8">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8">
         {content.map((item, index) => (
           <div
             key={index}
-            className="p-5 flex items-start justify-center gap-6 shadow-lg rounded-md bg-white group hover:bg-gradient-to-t from-yellow-50 to-zinc-50 duration-200"
+            className="w-full p-5 flex flex-col lg:flex-row items-start justify-center lg:gap-6 shadow-lg rounded-md bg-white group hover:bg-gradient-to-t from-yellow-50 to-zinc-50 duration-200"
           >
             <div className="mb-2 object-cover rounded-md text-primary p-1 w-24 h-24">
               {item.icon}

@@ -8,14 +8,15 @@ import OurApproches from "./components/our-approches";
 import OurCulture from "./components/our-culture";
 import Faq from "./components/faqs";
 import Navbar from "../caseStudies/components/navbar";
+import Footer from "@/components/footer";
 
 const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full py-16 bg-gradient-to-b from-white to-neutral-100">
+      <div className="w-full py-10 lg:py-16 from-white to-neutral-100">
         {/* Main Content Section */}
-        <div className="mx-auto py-16 px-16 md:px-8 lg:px-28 grid grid-cols-1 lg:grid-cols-2 gap-12 justify-items-center">
+        <div className="mx-auto py-5 lg:py-16 px-5 md:px-8 lg:px-28 grid grid-cols-1 lg:grid-cols-2 gap-12 justify-items-center">
           {/* Text Content */}
           <motion.div
             className="space-y-6"
@@ -113,10 +114,10 @@ const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-semibold text-neutral-100">
+          <h2 className="text-3xl font-semibold text-neutral-100 text-left lg:text-center">
             Discover the PrimeVista Difference
           </h2>
-          <p className="text-neutral-100 mt-4 leading-relaxed text-lg">
+          <p className="text-neutral-100 mt-4 leading-relaxed text-base lg:text-lg text-left lg:text-center">
             With PrimeVista Global by your side, you&apos;re not just
             outsourcing a task; you&apos;re building a partnership rooted in
             trust, expertise, and shared success. Whether you need help with
@@ -130,6 +131,7 @@ const AboutPage = () => {
         <OurCulture />
         <Faq />
       </div>
+      <Footer />
     </>
   );
 };

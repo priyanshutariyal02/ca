@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-screen px-16 tracking-[0.45px]">
+      <div className="w-full min-h-screen lg:px-16 tracking-[0.45px]">
         <video
           // src="/assets/video/earth.mp4"
           src="/assets/video/earth_2.mp4"

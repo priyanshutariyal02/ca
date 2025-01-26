@@ -44,8 +44,8 @@ const chooseData = [
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full flex flex-col px-28 gap-16 mt-10 py-16">
-      <div className="flex justify-between items-center">
+    <div className="w-full flex flex-col px-5 lg:px-28 gap-16 mt-10 py-16">
+      <div className="flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-0">
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl text-primary font-bold">Why Choose Us</h1>
           <p className="text-5xl">Where Expertise and Innovation Align</p>
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
           seamless integration into your operations.{" "}
         </p>
       </div>
-      <div className="w-full grid grid-cols-3 justify-items-center gap-10">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-10">
         {chooseData.map((item, index) => (
           <div
             key={index}

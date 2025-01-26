@@ -18,36 +18,40 @@ const Contact = () => {
           alt="image"
           className="w-full h-full object-cover opacity-50"
         />
-        <h1 className=" capitalize text-7xl text-white z-30 absolute top-20 left-10 max-w-4xl p-5 leading-normal font-semibold">
+        <h1 className="capitalize text-4xl sm:text-5xl lg:text-7xl text-white z-30 absolute top-20 left-10 max-w-4xl p-5 leading-normal font-semibold">
           We are <span className="text-primary">ready</span> to help you and
           answer your questions
         </h1>
       </div>
-      <div className="pt-16 px-28 w-full flex items-center justify-between">
+      <div className="pt-16 px-28 w-full flex flex-col lg:flex-row lg:flex md:grid gap-5 md:grid-cols-2 items-center justify-between">
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
       </div>
 
-      <div className="w-full px-28 py-16 flex justify-between gap-10">
+      <div className="w-full p-5 lg:px-28 py-16 flex flex-col lg:flex-row lg:justify-between gap-10">
         <div className="flex flex-col gap-10 max-w-2xl">
           <div className="flex flex-col gap-5">
             <h1 className="text-2xl font-bold text-primary">Contact Us</h1>
-            <p className="text-7xl text-neutral-800">
+            <p className="text-3xl md:text-4xl lg:text-7xl text-neutral-800">
               Get in Touch With Us & Let&apos;s Talk
             </p>
           </div>
           <div className="flex flex-col gap-5 divide-y">
-            <h2 className="text-3xl font-semibold">Work Hours: </h2>
+            <h2 className="text-xl lg:text-3xl font-semibold">Work Hours: </h2>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-xl font-semibold">Monday-Friday</p>
+              <p className="text-base lg:text-xl font-semibold">
+                Monday-Friday
+              </p>
               <p className="flex items-center justify-center gap-3">
                 <IconClock /> 9:00 AM - 17:00 PM
               </p>
             </div>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-xl font-semibold">Saturday-Sunday</p>
+              <p className="text-base lg:text-xl font-semibold">
+                Saturday-Sunday
+              </p>
               <p className="flex items-center justify-center gap-3">
                 <IconClock /> Close
               </p>
@@ -62,8 +66,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-neutral-100 p-5 flex items-center justify-center">
-          <form className="w-[40rem] rounded-lg bg-white shadow-lg p-8 space-y-6">
+        <div className="w-full bg-neutral-100 lg:p-5 flex items-center justify-center">
+          <form className="w-[40rem] rounded-lg bg-white shadow-lg p-5 lg:p-8 space-y-6">
             <div className="space-y-2">
               <label
                 htmlFor="full-name"

@@ -1,41 +1,17 @@
 import React from "react";
 import { InteractiveHoverButton } from "./ui/hover-button";
-import { LayoutGrid } from "../components/ui/layout-grid";
-
 import own from "../../public/assets/images/own.jpg";
 import t3 from "../../public/assets/images/t3.jpg";
 import gp from "../../public/assets/images/gp.png";
 import build from "../../public/assets/images/build.jpeg";
 import { Reveal } from "./ui/Reveal";
 import Link from "next/link";
-
-const cards = [
-  {
-    id: 1,
-    className: "md:col-span-2",
-    thumbnail: t3,
-  },
-  {
-    id: 2,
-    className: "col-span-1",
-    thumbnail: own,
-  },
-  {
-    id: 3,
-    className: "col-span-1",
-    thumbnail: build,
-  },
-  {
-    id: 4,
-    className: "md:col-span-2",
-    thumbnail: gp,
-  },
-];
+import Image from "next/image";
 
 const About = () => {
   return (
     <div
-      className="w-full flex items-center justify-center py-16 px-10 min-h-screen mt-5"
+      className="w-full flex flex-col gap-5 lg:gap-0 lg:flex-row  lg:items-center lg:justify-center py-10 lg:py-16 px-5 lg:px-10 mt-5"
       id="about"
     >
       <div className="flex-1 h-full leading-8 flex flex-col gap-5 text-lg text-neutral-700">
@@ -43,7 +19,7 @@ const About = () => {
           <h1 className=" font-bold text-2xl text-primary">About Us</h1>
         </Reveal>
         <Reveal>
-          <h2 className="text-5xl text-neutral-800 max-w-2xl font-semibold">
+          <h2 className="text-3xl lg:text-5xl text-neutral-800 max-w-2xl font-semibold">
             Navigating Accounting & Taxation with Precision
           </h2>
         </Reveal>
@@ -80,8 +56,72 @@ const About = () => {
           <InteractiveHoverButton>Know More</InteractiveHoverButton>
         </Link>
       </div>
-      <div className="w-full h-[70dvh] flex-1 flex items-center justify-center">
-        <LayoutGrid cards={cards} />
+      <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+        {/* First Column */}
+        <div className="w-full h-full grid grid-rows-3 gap-4">
+          <div className="row-span-2 overflow-hidden rounded-lg">
+            <Image
+              src={own}
+              alt="image 1"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full h-full overflow-hidden rounded-lg">
+            <Image
+              src={t3}
+              alt="image 2"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Second Column */}
+        <div className="w-full h-full grid grid-rows-3 gap-4">
+          <div className="w-full h-full overflow-hidden rounded-lg">
+            <Image
+              src={gp}
+              alt="image 3"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="row-span-2 overflow-hidden rounded-lg">
+            <Image
+              src={build}
+              alt="image 4"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Third Column */}
+        <div className="w-full h-full grid grid-rows-3 gap-4">
+          <div className="row-span-2 overflow-hidden rounded-lg">
+            <Image
+              src={gp}
+              alt="image 5"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full h-full overflow-hidden rounded-lg">
+            <Image
+              src={gp}
+              alt="image 6"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

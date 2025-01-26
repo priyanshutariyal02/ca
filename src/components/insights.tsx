@@ -3,46 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { InteractiveHoverButton } from "./ui/hover-button";
-
-const blogData = [
-  {
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Consectetur adipiscing elit.",
-    desc: "Sit amet consectetur adipiscing elit. Sapiente deleniti, quasi alias quisquam eligendi harum.",
-    author: "John Doe",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Voluptas quidem sint.",
-    desc: "Quibusdam exercitationem voluptas quidem sint facilis mollitia ad repudiandae magni, modi saepe.",
-    author: "John Doe",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Eius, nemo recusandae.",
-    desc: "Deserunt eius nemo recusandae consectetur adipisci dolorem tempora animi quae asperiores. hasjfkdb asfbalsdjfljkas bfjklandflka fd",
-    author: "John Doe",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Eius, nemo recusandae.",
-    desc: "Deserunt eius nemo recusandae consectetur adipisci dolorem tempora animi quae asperiores. hasjfkdb asfbalsdjfljkas bfjklandflka fd",
-    author: "John Doe",
-  },
-];
+import { blogData } from "@/data/blog-data";
 
 const Insight = () => {
   return (
-    <div className="w-full min-h-screen px-20 py-16 flex" id="insights">
-      <div className="flex-1 p-5 flex flex-col justify-evenly relative">
+    <div
+      className="w-full min-h-screen px-5 lg:px-20 py-16 flex flex-col lg:flex-row"
+      id="insight"
+    >
+      <div className="flex-1 flex flex-col gap-5 lg:gap-0 justify-evenly relative">
         {/* Icon Background */}
         <IconBackground
-          className="w-72 h-72 absolute -z-10 top-[3rem] left-[-4rem] text-primary opacity-20"
+          className="w-72 h-72 absolute -z-10 -top-16 -left-10 lg:top-[3rem] lg:left-[-4rem] text-primary opacity-20"
           size={40}
         />
 
         {/* Heading */}
-        <h1 className="text-8xl md:text-9xl font-semibold">Insights</h1>
+        <h1 className="text-5xl lg:text-8xl md:text-9xl font-semibold">
+          Insights
+        </h1>
 
         {/* Paragraph */}
         <p className="text-lg md:text-xl max-w-2xl leading-8 md:leading-9 mt-5">
@@ -58,8 +37,8 @@ const Insight = () => {
         </Link>
       </div>
 
-      <div className="flex-1 p-5 grid grid-cols-2 gap-5">
-        {blogData.map((blogData, index) => (
+      <div className="flex-1 p-0 lg:p-5 grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 lg:mt-0">
+        {blogData.slice(0, 4).map((blogData, index) => (
           <div
             key={index}
             className="w-full h-full flex flex-col gap-5 shadow-lg p-2 bg-white rounded-2xl"
@@ -73,19 +52,26 @@ const Insight = () => {
                 className="w-1/2 object-cover rounded-xl"
               />
               <div className="flex flex-col gap-2 items-start">
-                <h1 className="text-xl font-semibold">{blogData.title}</h1>
-                <p>{blogData.author}</p>
+                <h1 className="text-base font-bold lg:text-xl lg:font-semibold">
+                  {blogData.title.split(" ").length > 5
+                    ? blogData.title.split(" ").slice(0, 5).join(" ") + "..."
+                    : blogData.title}
+                </h1>
+                {/* <p>{blogData.author}</p> */}
               </div>
             </div>
-            <div className="w-full h-full text-lg flex justify-between flex-col p-2 ">
+            <div className="w-full h-full text-lg flex justify-between flex-col p-2 gap-3 lg:gap-0 ">
               <p>
-                {blogData.desc.split(" ").length > 11
-                  ? blogData.desc.split(" ").slice(0, 11).join(" ") + "..."
+                {blogData.desc[0].split(" ").length > 11
+                  ? blogData.desc[0].split(" ").slice(0, 11).join(" ") + "..."
                   : blogData.desc}
               </p>
 
               <div className="w-full flex justify-between items-center">
-                <Link href={"/insight"} className="text-primary text-xl font-semibold">
+                <Link
+                  href={`/insight/${blogData.id}`}
+                  className="text-primary text-xl font-semibold hover:text-yellow-600 duration-200"
+                >
                   Read More
                 </Link>
                 <p className="text-neutral-500 flex items-center gap-1">

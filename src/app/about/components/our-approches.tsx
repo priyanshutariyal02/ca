@@ -4,7 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-
 import {
   FaChartBar,
   FaRegEdit,
@@ -48,7 +47,7 @@ const approachData = [
 
 const OurApproches = () => {
   return (
-    <div className="w-full px-28 py-16 flex flex-col gap-10">
+    <div className="w-full px-5 lg:px-28 py-16 flex flex-col gap-10">
       <div className="flex items-center flex-col justify-center gap-3">
         <h1 className="text-primary text-2xl font-bold">Our Approches</h1>
         <h2 className="text-5xl text-neutral-700">
@@ -60,7 +59,7 @@ const OurApproches = () => {
           effective service delivery:
         </p>
       </div>
-      <div className="w-[60rem] mx-auto py-16">
+      <div className="lg:w-[60rem] mx-auto py-16">
         <VerticalTimeline>
           {approachData.map((item) => (
             <VerticalTimelineElement
