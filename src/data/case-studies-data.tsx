@@ -182,7 +182,7 @@ export const tabs = [
     content: (
       <div className="w-full flex flex-col gap-5">
         <h1 className="text-4xl font-semibold">
-          Simplifying Payroll Management for DEF Consulting
+          Simplifying Payroll Management for DEF Consulting 
         </h1>
         <p className="max-w-4xl text-lg">
           DEF Consulting, a growing management consultancy with a diverse,
