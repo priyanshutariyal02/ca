@@ -367,7 +367,7 @@ const data = [
             ✅
             <span>
               <strong>Comprehensive Tax Filing:</strong> We handle your
-              business's tax filings, including income tax, sales tax, VAT, and
+              business&apos;s tax filings, including income tax, sales tax, VAT, and
               other local taxes, ensuring timely submissions and compliance.
             </span>
           </li>
@@ -401,7 +401,7 @@ const data = [
             <span>
               <strong>Tax Document Preparation:</strong> We prepare and organize
               all necessary documents, including W-2s, 1099s, and other required
-              filings, ensuring everything is in order when it's time to file.
+              filings, ensuring everything is in order when it&apos;s time to file.
             </span>
           </li>
           <li className="flex items-start gap-2">

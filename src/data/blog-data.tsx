@@ -65,7 +65,7 @@ export const blogData: {
       "Bank Reconciliation Best Practices: How to Keep Your Financial Records Accurate and Up-to-Date",
     img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     desc: [
-      "Bank reconciliation is a crucial process that ensures your business's financial records match the transactions recorded by your bank, helping to maintain accurate financial statements and manage cash flow effectively.",
+      "Bank reconciliation is a crucial process that ensures your business&apos;s financial records match the transactions recorded by your bank, helping to maintain accurate financial statements and manage cash flow effectively.",
       "What is Bank Reconciliation?",
       "It involves comparing and matching transactions in your financial records with your bank statement to identify discrepancies and ensure alignment.",
       "Why Bank Reconciliation is Crucial for Your Business:",

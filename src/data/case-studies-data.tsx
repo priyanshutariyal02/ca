@@ -87,7 +87,7 @@ export const tabs = [
         </ul>
 
         <p className="max-w-4xl text-lg">
-          By leveraging PrimeVista Global's Virtual Bookkeeping service, ABC
+          By leveraging PrimeVista Global&apos;s Virtual Bookkeeping service, ABC
           Tech Solutions streamlined their financial management, improved
           operational efficiency, and gained better control over their financial
           health, positioning them for continued growth.
