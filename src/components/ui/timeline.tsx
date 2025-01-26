@@ -1,6 +1,5 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
-import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
