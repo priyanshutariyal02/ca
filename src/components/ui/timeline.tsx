@@ -48,7 +48,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             scalable solutions to meet the unique needs of your business. With a
             focus on efficiency, precision, and personalized attention, we help
             you navigate complex financial landscapes with confidence, so you
-            can focus on what matters most—your success.
+            can focus on what matters most-your success.
           </p>
         </div>
         {/* <Link

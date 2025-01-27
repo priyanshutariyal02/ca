@@ -20,9 +20,9 @@ const BlogDetail = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full px-28 py-16">
+      <div className="w-full px-5 lg:px-28 py-10 lg:py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-semibold text-neutral-800 leading-[4rem]">
+          <h1 className="text-3xl lg:text-5xl font-semibold text-neutral-800  lg:leading-[4rem]">
             {blog.title}
           </h1>
           <div className="mt-8">

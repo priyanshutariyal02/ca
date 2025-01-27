@@ -58,7 +58,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#171717] text-white p-10 absolute left-0">
+    <footer className="bg-[#171717] text-white p-10 absolute left-0 w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {sections.map((section, index) => (
           <div key={index} className="flex flex-col gap-4 items-start">
