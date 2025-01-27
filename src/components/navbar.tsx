@@ -84,7 +84,7 @@ const Navbar = () => {
 
       {/* Hamburger Icon for Mobile */}
       <div
-        className="md:hidden flex items-center text-white text-3xl cursor-pointer"
+        className="lg:hidden flex items-center text-white text-3xl cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         ☰
@@ -94,7 +94,7 @@ const Navbar = () => {
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-5 md:gap-10 text-xl text-white absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto bg-[#171717] md:bg-transparent py-5 md:py-0`}
+        } lg:flex flex-col lg:flex-row items-center gap-5 lg:gap-5 xl:gap-10 text-xl text-white absolute lg:relative top-16 lg:top-0 left-0 lg:left-auto w-full lg:w-auto bg-[#171717] lg:bg-transparent py-5 lg:py-0`}
       >
         {navLinks.map((item, index) => (
           <a

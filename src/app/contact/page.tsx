@@ -18,7 +18,7 @@ const Contact = () => {
           alt="image"
           className="w-full h-full object-cover opacity-50"
         />
-        <h1 className="capitalize text-4xl sm:text-5xl lg:text-7xl text-white z-30 absolute top-20 left-10 max-w-4xl p-5 leading-normal font-semibold">
+        <h1 className="capitalize text-4xl sm:text-5xl lg:text-7xl text-white z-30 absolute top-20 left-10 max-w-4xl p-5 leading-normal font-semibold lg:leading-relaxed">
           We are <span className="text-primary">ready</span> to help you and
           answer your questions
         </h1>

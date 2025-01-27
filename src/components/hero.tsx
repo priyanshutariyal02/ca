@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       {/* Button Section */}
-      <div className="relative min-w-screen top-[10rem] lg:top-[25rem] z-20 flex flex-col sm:flex-row items-center justify-center gap-5 sm:top-[20rem]">
+      <div className="relative min-w-screen top-[10rem] lg:top-[23rem] z-20 flex flex-col sm:flex-row items-center justify-center gap-5 sm:top-[20rem]">
         <button
           type="button"
           className="bg-primary rounded-full px-6 py-3 text-white text-lg font-semibold hover:bg-yellow-600 duration-200 w-full sm:w-auto"

@@ -29,10 +29,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-neutral-50 font-sans md:px-10 relative"
+      className="w-full bg-neutral-50 font-sans md:px-10 relative px-5 lg:px-28"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10 flex justify-between items-start">
+      <div className="w-full mx-auto py-20 flex justify-between items-start">
         <div className="max-w-4xl flex flex-col gap-5">
           <h2 className="text-2xl  max-w-4xl text-primary font-semibold">
             Our Services
@@ -59,7 +59,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </Link> */}
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative w-full pb-20">
         {data.map((item, index) => (
           <div
             key={index}
