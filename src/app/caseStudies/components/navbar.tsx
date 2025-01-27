@@ -9,7 +9,7 @@ const navLinks = [
   },
   {
     name: "Services",
-    link: "/service",
+    link: "/services",
   },
   {
     name: "Case Studies",
