@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Tabs from "./components/ui/tabs";
 import Footer from "@/components/footer";
-import Image from "next/image";
 
 const CaseStudies = () => {
   return (
