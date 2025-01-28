@@ -60,36 +60,32 @@ const Insights = () => {
             </div>
           ))}
 
-          <div className="flex-1 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {blogData.slice(0, blogData.length-1).map((item, index) => (
+          <div className="flex-1 p-5 lg:p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {blogData.slice(0, blogData.length - 1).map((item, index) => (
               <div
                 key={index}
-                className="w-full h-full flex flex-col gap-5 shadow-lg p-2 bg-white rounded-2xl"
+                className="w-full h-full flex flex-col gap-5 shadow-lg p-5 bg-white rounded-2xl"
               >
-                <div className="flex w-full h-full overflow-hidden gap-3">
-                  <Image
-                    src={item.img}
-                    alt={`${index}`}
-                    width={500}
-                    height={500}
-                    className="w-1/2 object-cover rounded-xl"
-                  />
-                  <div className="flex flex-col gap-2 items-start">
-                    <h1 className="text-h6 font-semibold">
-                      {item.title.split(" ").length > 6
-                        ? item.title.split(" ").slice(0, 6).join(" ") + "..."
-                        : item.title}
-                    </h1>
-                  </div>
-                </div>
-                <div className="w-full h-full text-body flex justify-between flex-col p-2">
+                <Image
+                  src={item.img}
+                  alt={`${index}`}
+                  width={500}
+                  height={500}
+                  className="w-full object-cover rounded-xl"
+                />
+                <h1 className="text-body font-medium">
+                  {item.title.split(" ").length > 7
+                    ? item.title.split(" ").slice(0, 7).join(" ") + "..."
+                    : item.title}
+                </h1>
+                <div className="w-full h-full text-link flex justify-between flex-col">
                   <p>
-                    {item.desc[0].split(" ").length > 11
-                      ? item.desc[0].split(" ").slice(0, 11).join(" ") + "... "
+                    {item.desc[0].split(" ").length > 18
+                      ? item.desc[0].split(" ").slice(0, 18).join(" ") + "... "
                       : item.desc}
                   </p>
 
-                  <div className="w-full flex justify-between items-center">
+                  <div className="w-full flex justify-between items-center mt-3">
                     <Link
                       href={`/insight/${item.id}`}
                       className="text-primary text-link font-medium"

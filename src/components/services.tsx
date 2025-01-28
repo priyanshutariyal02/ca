@@ -74,7 +74,7 @@ const Services = () => {
         {content.map((item, index) => (
           <div
             key={index}
-            className="w-full p-5 flex flex-col lg:flex-row items-start justify-center lg:gap-6 shadow-lg rounded-md bg-white group hover:bg-gradient-to-t from-yellow-50 to-zinc-50 duration-200"
+            className="w-full h-full p-5 flex flex-col lg:flex-row items-start justify-center lg:gap-6 shadow-lg rounded-md bg-white group hover:bg-gradient-to-t from-yellow-50 to-zinc-50 duration-200"
           >
             <div className="mb-2 object-cover rounded-md text-primary p-1 w-24 h-24">
               {item.icon}

@@ -71,10 +71,10 @@ const Testimonials = () => {
       <h1 className="text-h5 text-primary text-center font-semibold">
         Testimonials
       </h1>
-      <h2 className="text-h2 font-medium text-center">
+      <h2 className="text-h3 font-medium text-center">
         Client&apos;s Experiences
       </h2>
-      <p className="text-neutral-600 mb-12 text-body text-center">
+      <p className="text-neutral-600 mb-12 max-w-5xl mx-auto text-body text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
         nemo, excepturi cupiditate corrupti ad quod optio. Eveniet excepturi.
       </p>
@@ -104,7 +104,7 @@ const Testimonials = () => {
           ))}
         </Slider>
         <p className=" capitalize text-mini text-neutral-500 mt-16 text-center">
-          our user say <strong>Excellent</strong>
+          our user say <strong className="text-primary">Excellent</strong>
         </p>
       </div>
     </div>
