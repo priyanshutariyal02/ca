@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceTimeline from "./components/service-timeline";
 import Navbar from "../caseStudies/components/navbar";
-import Image from "next/image";
 import Footer from "@/components/footer";
 
 const Services = () => {
