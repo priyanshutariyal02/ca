@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${product_sans.variable} antialiased bg-neutral-50`}>
+      <body className={`${product_sans.variable} antialiased bg-neutral-50 font-prosan`}>
         <>
           <CustomCursor />
           

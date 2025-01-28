@@ -49,7 +49,7 @@ const content: ServiceContent[] = [
 const Services = () => {
   return (
     <div
-      className="w-full mt-[40rem] lg:mt-[27rem] py-20 flex justify-start gap-20  flex-col px-5 lg:px-20"
+      className="w-full mt-[40rem] lg:mt-[27rem] py-20 flex justify-start gap-20  flex-col px-5 lg:px-20 font-prosan"
       id="service"
     >
       {/* Heading */}
