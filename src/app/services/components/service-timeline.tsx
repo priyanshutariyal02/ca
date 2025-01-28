@@ -17,8 +17,8 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong className="text-neutral-600">
                 Daily Transaction Management:
@@ -27,8 +27,8 @@ const data = [
               receipt, and expense is accounted for accurately.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong className="text-neutral-600">Real-Time Access:</strong>{" "}
               With cloud-based solutions, you have instant access to your
@@ -36,16 +36,16 @@ const data = [
               real-time.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong className="text-neutral-600">Customized Reports:</strong>{" "}
               We create monthly and quarterly reports based on your needs,
               giving you detailed insights into your financial performance.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong className="text-neutral-600">
                 Financial Forecasting:
@@ -54,8 +54,8 @@ const data = [
               giving you a clearer picture of your financial future.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong className="text-neutral-600">Tax-Ready Books:</strong> We
               maintain books in line with tax regulations, making tax filing
@@ -86,32 +86,32 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Regular Reconciliation:</strong> We match your bank
               statements with your financial records on a monthly or quarterly
               basis, ensuring no errors.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Error Detection:</strong> By cross-referencing bank
               transactions, we can identify discrepancies such as missing
               entries, duplicate transactions, or misbooked items.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Timely Reporting:</strong> After the reconciliation
               process, we provide you with clear and easy-to-understand
               reconciliation reports.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Cash Flow Visibility:</strong> We provide insights into
               your available cash, making sure you&apos;re always aware of your
@@ -119,8 +119,8 @@ const data = [
               effectively.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Compliance:</strong> We ensure that all reconciliations
               meet regulatory requirements, supporting your compliance efforts.
@@ -149,31 +149,31 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Accurate Payroll Calculation:</strong> We calculate wages,
               including overtime, bonuses, and deductions, ensuring each
               employee receives the correct amount.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Tax Filing and Compliance:</strong> We ensure that your
               business complies with tax regulations by accurately calculating
               employee tax liabilities and withholding the appropriate amounts.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Pay Slips:</strong> We provide employees with
               professional, clear pay slips showing all earnings and deductions.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Benefits Management:</strong> We handle employee benefits
               such as health insurance, retirement plans, and other perks,
@@ -181,16 +181,16 @@ const data = [
               with company policies.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Direct Deposit:</strong> We offer secure direct deposit
               options to ensure your employees receive their payments swiftly
               and securely.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Employee Reporting:</strong> We maintain detailed reports
               on employee wages, tax contributions, and benefits for your
@@ -221,8 +221,8 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Financial Strategy Development:</strong> We work with you
               to develop financial strategies that align with your business
@@ -230,24 +230,24 @@ const data = [
               vision.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Budgeting and Forecasting:</strong> We help you create
               detailed budgets and forecasts, offering a clear roadmap for
               future growth.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Cash Flow Management:</strong> Our team tracks your cash
               flow, providing advice on how to optimize working capital, manage
               debt, and ensure your business remains financially stable.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Financial Reporting and Analysis:</strong> We provide
               regular financial reports, interpreting the data to help you make
@@ -255,16 +255,16 @@ const data = [
               strategies.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Risk Management:</strong> We help identify and manage
               financial risks, from tax obligations to market changes, ensuring
               you mitigate potential issues before they arise.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Mergers, Acquisitions, and Fundraising Support:</strong>{" "}
               If you&apos;re considering expansion or fundraising, we provide
@@ -293,48 +293,48 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Data Collection & Cleaning:</strong> We collect and clean
               your business data to ensure that it&apos;s accurate and ready for
               analysis.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Descriptive Analytics:</strong> We provide reports that
               describe your past performance, helping you understand trends and
               key metrics.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Predictive Analytics:</strong> We use statistical models
               and machine learning techniques to forecast future trends and
               behaviors, helping you plan for growth.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Performance Dashboards:</strong> We create customized
               dashboards to visualize your data, making it easier for you to
               interpret key metrics and take action.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Business Intelligence:</strong> We leverage advanced
               analytics tools to generate actionable business insights that help
               optimize your operations.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Real-Time Reporting:</strong> We provide real-time data
               reports, enabling you to make quick decisions based on the most
@@ -363,24 +363,24 @@ const data = [
           <strong>Key Features:</strong>
         </p>
         <ul className="pl-6 text-neutral-600 text-lg mb-8">
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Comprehensive Tax Filing:</strong> We handle your
               business&apos;s tax filings, including income tax, sales tax, VAT, and
               other local taxes, ensuring timely submissions and compliance.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Tax Planning and Strategy:</strong> We help you plan and
               strategize to minimize tax liabilities, identifying opportunities
               for deductions and credits that you may have overlooked.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Multinational Tax Compliance:</strong> For businesses
               operating internationally, we ensure compliance with both local
@@ -388,24 +388,24 @@ const data = [
               implications.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Quarterly Tax Estimates:</strong> We help businesses with
               quarterly tax estimates, reducing the risk of underpayment
               penalties.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Tax Document Preparation:</strong> We prepare and organize
               all necessary documents, including W-2s, 1099s, and other required
               filings, ensuring everything is in order when it&apos;s time to file.
             </span>
           </li>
-          <li className="flex items-start gap-2">
-            ✅
+          <li className="flex items-center gap-2">
+            <p className="w-3 h-3 bg-primary"></p>
             <span>
               <strong>Audit Support:</strong> In case of an audit, we provide
               support, ensuring that your financial records are accurate and in
@@ -424,7 +424,7 @@ const data = [
 
 const ServiceTimeline = () => {
   return (
-    <div className="w-full">
+    <div className="w-full font-prosan">
       <Timeline data={data} />
     </div>
   );

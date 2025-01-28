@@ -8,23 +8,19 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-[70dvh] overflow-hidden relative bg-black">
-        <Image
-          src={
-            "https://plus.unsplash.com/premium_photo-1682125235036-d1ab54136ff4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          width={2000}
-          height={2000}
-          alt="image"
-          className="w-full h-full object-cover opacity-50"
-        />
-        <h1 className="capitalize text-4xl sm:text-5xl lg:text-7xl text-white z-30 absolute top-20 left-10 max-w-4xl p-5 leading-normal font-semibold lg:leading-relaxed">
+      <div className="w-full h-[30dvh] overflow-hidden px-20 bg-black flex flex-col  justify-center">
+        <h1 className="text-h2 font-semibold w-full text-white gap-3 relative pl-8">
+          <p className="w-5 h-5 bg-primary absolute bottom-7 left-0"></p>{" "}
+          Contact Us
+        </h1>
+        <h1 className="capitalize text-h4 leading-normal text-white z-30  max-w-4xl font-medium pb-5">
           We are <span className="text-primary">ready</span> to help you and
           answer your questions
         </h1>
       </div>
+
       <div className="pt-16 px-28 w-full flex flex-col lg:flex-row lg:flex md:grid gap-5 md:grid-cols-2 items-center justify-between">
-        <div className="w-[20rem] h-[10rem] border p-5">A</div>
+        <div className="w-[20rem] h-[10rem] border p-5"></div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
         <div className="w-[20rem] h-[10rem] border p-5">A</div>
@@ -41,17 +37,13 @@ const Contact = () => {
           <div className="flex flex-col gap-5 divide-y">
             <h2 className="text-h5 font-semibold">Work Hours: </h2>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-body font-medium">
-                Monday-Friday
-              </p>
+              <p className="text-body font-medium">Monday-Friday</p>
               <p className="flex items-center font-medium text-link justify-center gap-3">
                 <IconClock /> 9:00 AM - 17:00 PM
               </p>
             </div>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-body font-medium">
-                Saturday-Sunday
-              </p>
+              <p className="text-body font-medium">Saturday-Sunday</p>
               <p className="flex items-center font-medium text-link justify-center gap-3">
                 <IconClock /> Close
               </p>
@@ -66,8 +58,15 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-neutral-100 lg:p-5 flex items-center justify-center">
-          <form className="w-[40rem] rounded-lg bg-white shadow-lg p-5 lg:p-8 space-y-6">
+        <div className="w-full h-1/2 bg-neutral-100 lg:p-5 flex items-center  justify-center relative">
+          <Image
+            src={"/assets/images/contactus.png"}
+            alt="contactus"
+            width={1000}
+            height={1000}
+            className="absolute top-0 left-0  w-full h-full object-cover object-top"
+          />
+          <form className="w-[40rem] rounded-lg bg-neutral-800/30 shadow-lg p-5 lg:p-8 space-y-6 z-20">
             <div className="space-y-2">
               <label
                 htmlFor="full-name"

@@ -1,6 +1,11 @@
 "use client";
 import React from "react";
-import {Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const faqData = [
   {
@@ -54,26 +59,28 @@ const Faq = () => {
   return (
     <div className="w-full px-5 lg:px-12 py-16">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
-        <h1 className="text-h2 font-semibold text-neutral-700">
-          FAQs
-        </h1>
+        <h1 className="text-h2 font-semibold text-neutral-800">FAQs</h1>
         {/* Accordion component should wrap AccordionItem */}
 
         <Accordion type="single" collapsible className="w-full">
           {faqData.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               {/* AccordionTrigger and AccordionContent should be inside AccordionItem */}
-              <AccordionTrigger className="text-h5">{item.que}</AccordionTrigger>
+              <AccordionTrigger>
+                <p className="text-h5 text-neutral-700 py-3">{item.que}</p>
+              </AccordionTrigger>
               <AccordionContent>
-                {Array.isArray(item.ans) ? (
-                  <ul className="list-disc pl-5 space-y-2">
-                    {item.ans.map((answer, idx) => (
-                      <li key={idx}>{answer}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-body leading-8 max-w-5xl">{item.ans}</p>
-                )}
+                <div className="p-3">
+                  {Array.isArray(item.ans) ? (
+                    <ul className="list-disc pl-5 space-y-2">
+                      {item.ans.map((answer, idx) => (
+                        <li key={idx}>{answer}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-body leading-8 max-w-5xl">{item.ans}</p>
+                  )}
+                </div>
               </AccordionContent>
             </AccordionItem>
           ))}

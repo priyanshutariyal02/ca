@@ -13,10 +13,10 @@ const About = () => {
       className="w-full flex flex-col lg:gap-10 lg:flex-row gap-5 lg:items-center lg:justify-center py-10 lg:py-16 px-5 lg:px-10 mt-5"
       id="about"
     >
-      <div className="flex-1 h-full leading-8 flex flex-col gap-5 text-lg text-neutral-700">
+      <div className="flex-1 h-full flex flex-col gap-5 text-lg text-neutral-700">
         <h1 className=" font-bold text-h5 text-primary">About Us</h1>
 
-        <h2 className="text-h3 leading-[3rem] text-neutral-800 max-w-2xl font-medium">
+        <h2 className="text-h2 text-neutral-800 max-w-2xl font-medium">
           Navigating Accounting & Taxation with Precision
         </h2>
         <p className="max-w-3xl text-20px">

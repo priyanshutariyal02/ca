@@ -4,9 +4,9 @@ import React from "react";
 const OurCulture = () => {
   return (
     <div className="w-full p-5 lg:px-28 py-16 flex flex-col lg:flex-row gap-10 min-h-[70dvh]">
-      <div className="flex flex-col gap-10 max-w-2xl flex-1">
-        <h1 className="text-h5 font-bold text-primary">Our Culture</h1>
-        <h2 className="text-h3 font-medium text-neutral-700">
+      <div className="flex flex-col justify-start leading-none gap-8 max-w-2xl flex-1">
+        <h1 className="text-h6 font-bold text-primary flex gap-2 items-center justify-start"><p className="w-3 h-3 bg-primary"/> <span className="text-neutral-800">Our Culture</span></h1>
+        <h2 className="text-h2 leading-none font-medium text-neutral-800">
           Building a Culture of Growth, Respect, and Celebration
         </h2>
         <p className="text-body leading-10">

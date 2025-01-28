@@ -50,7 +50,7 @@ const OurApproches = () => {
     <div className="w-full px-5 lg:px-28 py-16 flex flex-col gap-10">
       <div className="flex lg:items-center flex-col lg:justify-center gap-3">
         <h1 className="text-primary text-h5 font-bold text-left lg:text-center">Our Approches</h1>
-        <h2 className="text-h3 font-medium text-neutral-700">
+        <h2 className="text-h2 font-medium text-neutral-800">
           The Blueprint to Your Financial Success
         </h2>
         <p className="text-neutral-600 text-left lg:text-center text-body max-w-5xl">
@@ -59,7 +59,10 @@ const OurApproches = () => {
           effective service delivery:
         </p>
       </div>
-      <div className="lg:w-[60rem] mx-auto py-16">
+      <div className="lg:flex hidden w-full min-h-screen">
+sdfsaf
+      </div>
+      <div className="lg:w-[80rem] mx-auto lg:py-16 lg:hidden">
         <VerticalTimeline>
           {approachData.map((item) => (
             <VerticalTimelineElement
@@ -68,12 +71,12 @@ const OurApproches = () => {
                 borderBottom: "5px solid #fcbc45",
                 boxShadow: "none",
                 background: "white",
-                color: "#333",
+                color: "#292828",
               }}
               iconStyle={{ background: "#fcbc45", color: "#fff" }}
               icon={item.icon}
             >
-              <h3 className="text-xl font-bold text-neutral-800">
+              <h3 className="text-h5 font-medium text-neutral-800">
                 {item.title}
               </h3>
               <p className="mt-2 text-gray-600">{item.desc}</p>

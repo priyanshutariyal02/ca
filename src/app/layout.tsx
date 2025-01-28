@@ -6,26 +6,27 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-vertical-timeline-component/style.min.css";
 import "./globals.css";
 
+
 const product_sans = localFont({
   src: [
     {
-      path: "./fonts/ProductSans-Thin.ttf",
+      path: "../../public/fonts/ProductSans-Thin.ttf",
       weight: "300",
     },
     {
-      path: "./fonts/ProductSans-Light.ttf",
+      path: "../../public/fonts/ProductSans-Light.ttf",
       weight: "400",
     },
     {
-      path: "./fonts/ProductSans-Regular.ttf",
+      path: "../../public/fonts/ProductSans-Regular.ttf",
       weight: "500",
     },
     {
-      path: "./fonts/ProductSans-Bold.ttf",
+      path: "../../public/fonts/ProductSans-Bold.ttf",
       weight: "800",
     },
     {
-      path: "./fonts/ProductSans-Black.ttf",
+      path: "../../public/fonts/ProductSans-Black.ttf",
       weight: "900",
     },
   ],

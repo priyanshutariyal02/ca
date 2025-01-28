@@ -5,6 +5,8 @@ import { useParams } from "next/navigation"; // Use useParams for dynamic route 
 import { blogData } from "@/data/blog-data";
 import Footer from "@/components/footer";
 import Navbar from "@/app/caseStudies/components/navbar";
+import Image from "next/image";
+import Link from "next/link";
 
 const BlogDetail = () => {
   const params = useParams(); // Get the dynamic route parameters
@@ -20,26 +22,28 @@ const BlogDetail = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full px-5 lg:px-28 py-10 lg:py-16">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl lg:text-5xl font-semibold text-neutral-800  lg:leading-[4rem]">
+      <div className="w-full flex flex-col lg:flex-row gap-5 px-5 lg:px-28 py-10 lg:py-16">
+        <div className="w-full mx-auto">
+          <h1 className="text-h3 font-semibold text-neutral-800  lg:leading-[4rem]">
             {blog.title}
           </h1>
           <div className="mt-8">
-            <img
+            <Image
               src={blog.img}
               alt={blog.title}
-              className="w-full h-auto object-cover rounded-lg shadow-lg"
+              width={2000}
+              height={2000}
+              className="w-full h-[30rem] object-cover rounded-lg shadow-lg"
             />
           </div>
-          <div className="text-lg text-neutral-700 mt-4 leading-relaxed">
+          <div className="text-link text-neutral-700 mt-4 leading-relaxed">
             {Array.isArray(blog.desc) ? (
               <div className="mt-8">
                 {blog.desc.map((item, index) => (
                   <div key={index} className="mb-4 ">
                     {item.match(/^\d+\./) ? (
                       <div className="flex items-start flex-col">
-                        <span className="text-primary text-lg font-bold">
+                        <span className="text-primary text-body font-medium">
                           {item.split(":")[0]}:
                         </span>
                         <p className="text-neutral-600">{item.split(":")[1]}</p>
@@ -60,6 +64,49 @@ const BlogDetail = () => {
             ) : (
               <p className="text-gray-700">{blog.desc}</p>
             )}
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 bg-white p-10 flex flex-col">
+          {/* Heading */}
+          <h1 className="text-h5 font-medium border-b py-3 mb-10">
+            Related Insights
+          </h1>
+
+          {/* Blog Cards */}
+          <div className="w-full flex flex-wrap lg:flex-col gap-5 overflow-x-auto">
+            {blogData.slice(0, 4).map((blog) => (
+              <div
+                key={blog.id}
+                className="flex-1 min-w-[16rem] md:min-w-[20rem] lg:w-full p-4 flex flex-col border shadow-lg rounded-lg gap-3"
+              >
+                {/* Blog Image */}
+                <Image
+                  src={blog.img}
+                  alt={blog.title}
+                  width={1000}
+                  height={1000}
+                  className="w-full h-[15rem] md:h-[17rem] object-cover rounded-lg"
+                />
+
+                {/* Blog Title */}
+                <h2 className="text-h5 font-medium text-neutral-800">
+                  {blog.title.split(" ").length > 10
+                    ? blog.title.split(" ").slice(0, 10).join(" ") + "..."
+                    : blog.title}
+                </h2>
+
+                {/* Blog Description */}
+                <p className="text-neutral-600 text-link">{blog.desc[0]}</p>
+
+                {/* Read More Link */}
+                <Link
+                  href={`/insight/${blog.id}`}
+                  className="text-primary text-link font-medium hover:text-yellow-500 duration-200"
+                >
+                  Read More
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>

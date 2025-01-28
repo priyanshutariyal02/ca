@@ -29,18 +29,19 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-neutral-50 font-sans md:px-10 relative px-5 lg:px-28"
+      className="w-full bg-neutral-50 md:px-10 relative px-5 lg:px-28 font-prosan"
       ref={containerRef}
     >
       <div className="w-full mx-auto py-20 flex justify-between items-start">
-        <div className="max-w-4xl flex flex-col gap-5">
-          <h2 className="text-2xl  max-w-4xl text-primary font-semibold">
-            Our Services
-          </h2>
-          <h1 className="text-3xl md:text-4xl lg:text-6xl">
-            Tailored Financial Solutions for Every Need
+        <div className="w-full flex flex-col items-center justify-center gap-5">
+          <h1 className="text-h6 font-bold text-primary flex gap-2 items-center justify-start">
+            <p className="w-3 h-3 bg-primary" />{" "}
+            <span className="text-neutral-800">Our Expertise</span>
           </h1>
-          <p className="text-neutral-600 text-base md:text-xl mt-3">
+          <h2 className="text-h2 leading-none font-medium text-neutral-800 max-w-3xl text-center">
+            Tailored Financial Solutions for Every Need
+          </h2>
+          <p className="text-neutral-600 text-base md:text-xl mt-3 max-w-4xl text-center">
             At PrimeVista Global, we offer a comprehensive range of services
             designed to simplify your financial management and fuel your
             business growth. From bookkeeping and payroll to data analytics and
@@ -51,12 +52,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             can focus on what matters most-your success.
           </p>
         </div>
-        {/* <Link
-          href={"/"}
-          className="bg-primary text-white text-xl px-4 py-2 rounded-md duration-200 hover:bg-amber-500"
-        >
-          Home
-        </Link> */}
       </div>
 
       <div ref={ref} className="relative w-full pb-20">

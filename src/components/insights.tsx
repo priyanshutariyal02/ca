@@ -102,9 +102,9 @@ const Insight = () => {
                 >
                   Read More
                 </Link>
-                <p className="text-neutral-500 flex items-center gap-1 text-mini">
+                {/* <p className="text-neutral-500 flex items-center gap-1 text-mini">
                   <IconClock /> 4 days ago
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
