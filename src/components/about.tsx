@@ -4,7 +4,6 @@ import own from "../../public/assets/images/own.jpg";
 import t3 from "../../public/assets/images/t3.jpg";
 import gp from "../../public/assets/images/gp.png";
 import build from "../../public/assets/images/build.jpeg";
-import { Reveal } from "./ui/Reveal";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,15 +14,12 @@ const About = () => {
       id="about"
     >
       <div className="flex-1 h-full leading-8 flex flex-col gap-5 text-lg text-neutral-700">
-        <Reveal>
-          <h1 className=" font-bold text-2xl text-primary">About Us</h1>
-        </Reveal>
-        <Reveal>
-          <h2 className="text-3xl lg:text-5xl text-neutral-800 max-w-2xl font-semibold">
-            Navigating Accounting & Taxation with Precision
-          </h2>
-        </Reveal>
-        <p className="max-w-3xl">
+        <h1 className=" font-bold text-h5 text-primary">About Us</h1>
+
+        <h2 className="text-h3 leading-[3rem] text-neutral-800 max-w-2xl font-medium">
+          Navigating Accounting & Taxation with Precision
+        </h2>
+        <p className="max-w-3xl text-20px">
           At PrimeVista , we are your trusted partner in achieving financial
           success. Specializing in offshore bookkeeping, taxation, and data
           analytics, we provide tailored solutions that meet the unique needs of
@@ -33,20 +29,20 @@ const About = () => {
 
         <div className="w-full flex gap-5 flex-col">
           <div className="flex max-w-3xl flex-col">
-            <span className="font-bold text-xl text-primary">
+            <span className="font-bold text-h6 text-primary">
               Unmatched Accuracy
             </span>
-            <p>
+            <p className="text-20px">
               We are committed to precision and reliability in every service we
               offer, ensuring that your financial data is always accurate and up
               to date.
             </p>
           </div>
           <div className="flex max-w-3xl flex-col">
-            <span className="font-bold text-xl text-primary">
+            <span className="font-bold text-h6 text-primary">
               Client-Centered Approach
             </span>
-            <p>
+            <p className="text-20px">
               We listen, understand, and provide tailored solutions to fit your
               specific requirements.
             </p>

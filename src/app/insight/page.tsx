@@ -31,7 +31,7 @@ const Insights = () => {
           {[blogData[blogData.length - 1]].map((item, index) => (
             <div
               key={index}
-              className="w-full flex flex-col sm:flex-row items-center gap-10 p-6 lg:bg-gray-100"
+              className="w-full flex flex-col sm:flex-row items-center gap-10 p-6 rounded-lg lg:bg-gray-100"
             >
               <div className="w-full sm:w-1/2 overflow-hidden rounded-lg shadow-lg">
                 <Image
@@ -44,10 +44,10 @@ const Insights = () => {
               </div>
 
               <div className="w-full sm:w-1/2 flex gap-5 sm:gap-10 flex-col">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-neutral-800">
+                <h1 className="text-h3 font-semibold text-neutral-800">
                   {item.title}
                 </h1>
-                <p>{item.desc[0]}</p>
+                <p className="text-body">{item.desc[0]}</p>
                 <div>
                   <Link
                     href={`/insight/${item.id}`}
@@ -61,7 +61,7 @@ const Insights = () => {
           ))}
 
           <div className="flex-1 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {blogData.slice(2, blogData.length).map((item, index) => (
+            {blogData.slice(0, blogData.length-1).map((item, index) => (
               <div
                 key={index}
                 className="w-full h-full flex flex-col gap-5 shadow-lg p-2 bg-white rounded-2xl"
@@ -75,14 +75,14 @@ const Insights = () => {
                     className="w-1/2 object-cover rounded-xl"
                   />
                   <div className="flex flex-col gap-2 items-start">
-                    <h1 className="text-lg sm:text-xl font-semibold">
+                    <h1 className="text-h6 font-semibold">
                       {item.title.split(" ").length > 6
                         ? item.title.split(" ").slice(0, 6).join(" ") + "..."
                         : item.title}
                     </h1>
                   </div>
                 </div>
-                <div className="w-full h-full text-lg flex justify-between flex-col p-2">
+                <div className="w-full h-full text-body flex justify-between flex-col p-2">
                   <p>
                     {item.desc[0].split(" ").length > 11
                       ? item.desc[0].split(" ").slice(0, 11).join(" ") + "... "
@@ -92,11 +92,11 @@ const Insights = () => {
                   <div className="w-full flex justify-between items-center">
                     <Link
                       href={`/insight/${item.id}`}
-                      className="text-primary text-lg sm:text-xl font-semibold"
+                      className="text-primary text-link font-medium"
                     >
                       Read More
                     </Link>
-                    <p className="text-neutral-500 flex items-center gap-1">
+                    <p className="text-neutral-500 flex items-center gap-1 text-mini">
                       <IconClock /> 4 days ago
                     </p>
                   </div>

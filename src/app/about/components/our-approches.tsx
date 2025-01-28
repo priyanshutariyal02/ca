@@ -48,12 +48,12 @@ const approachData = [
 const OurApproches = () => {
   return (
     <div className="w-full px-5 lg:px-28 py-16 flex flex-col gap-10">
-      <div className="flex items-center flex-col justify-center gap-3">
-        <h1 className="text-primary text-2xl font-bold">Our Approches</h1>
-        <h2 className="text-5xl text-neutral-700">
+      <div className="flex lg:items-center flex-col lg:justify-center gap-3">
+        <h1 className="text-primary text-h5 font-bold text-left lg:text-center">Our Approches</h1>
+        <h2 className="text-h3 font-medium text-neutral-700">
           The Blueprint to Your Financial Success
         </h2>
-        <p className="text-neutral-600 text-lg text-center max-w-5xl">
+        <p className="text-neutral-600 text-left lg:text-center text-body max-w-5xl">
           At PrimeVista Global, we follow a structured and efficient process to
           deliver exceptional results. Here&apos;s how we ensure seamless and
           effective service delivery:

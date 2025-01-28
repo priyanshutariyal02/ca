@@ -45,12 +45,12 @@ const chooseData = [
 const WhyChooseUs = () => {
   return (
     <div className="w-full flex flex-col px-5 lg:px-28 gap-16 mt-10 py-16">
-      <div className="flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-0">
+      <div className="flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-3">
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl text-primary font-bold">Why Choose Us</h1>
-          <p className="text-5xl">Where Expertise and Innovation Align</p>
+          <h1 className="text-h5 text-primary font-bold">Why Choose Us</h1>
+          <p className="text-h3 font-medium">Where Expertise and Innovation Align</p>
         </div>
-        <p className="text-xl text-neutral-600">
+        <p className="text-body max-w-5xl  text-neutral-600">
           At PrimeVista Global, we combine expertise, innovation, and a
           client-first approach to deliver tailored financial solutions that
           drive your success. With cutting-edge technology, dedicated resources,
@@ -65,10 +65,10 @@ const WhyChooseUs = () => {
             className="w-full h-full bg-white border rounded-lg shadow-lg p-4 flex flex-col gap-3"
           >
             <div className="text-primary">{item.icon}</div>
-            <h1 className="text-2xl font-semibold text-neutral-700">
+            <h1 className="text-h4 font-medium text-neutral-700">
               {item.title}
             </h1>
-            <p className="text-lg text-neutral-500">{item.desc}</p>
+            <p className="text-body text-neutral-500">{item.desc}</p>
           </div>
         ))}
       </div>

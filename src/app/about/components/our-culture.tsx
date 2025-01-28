@@ -5,11 +5,11 @@ const OurCulture = () => {
   return (
     <div className="w-full p-5 lg:px-28 py-16 flex flex-col lg:flex-row gap-10 min-h-[70dvh]">
       <div className="flex flex-col gap-10 max-w-2xl flex-1">
-        <h1 className="text-2xl font-bold text-primary">Our Culture</h1>
-        <h2 className="text-5xl text-neutral-700">
+        <h1 className="text-h5 font-bold text-primary">Our Culture</h1>
+        <h2 className="text-h3 font-medium text-neutral-700">
           Building a Culture of Growth, Respect, and Celebration
         </h2>
-        <p className="text-xl leading-10">
+        <p className="text-body leading-10">
           At PrimeVista Global, we believe in fostering an inclusive,
           collaborative, and vibrant work environment where every voice is
           valued. We celebrate diversity, encourage creativity, and empower our

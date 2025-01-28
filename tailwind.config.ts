@@ -12,6 +12,37 @@ export default {
       fontFamily: {
         prosan: ["var(--font-pro)"],
       },
+      fontSize: {
+        h1: "clamp(2.5rem, 1.5rem + 4vw, 8rem)", // Larger headings scale smoothly
+        h2: "clamp(2rem, 1.3rem + 2.5vw, 5rem)",
+        h3: "clamp(1.75rem, 1.25rem + 1.5vw, 3rem)",
+        h4: "clamp(1.5rem, 1.2rem + 0.8vw, 2.5rem)",
+        h5: "clamp(1.25rem, 1rem + 0.5vw, 1.75rem)",
+        h6: "clamp(1rem, 0.9rem + 0.3vw, 1.5rem)", // Smaller headings optimized for balance
+        body: "clamp(1rem, 0.95rem + 0.4vw, 1.375rem)", // Body text that's readable on all screens
+        link: "clamp(0.875rem, 0.8rem + 0.3vw, 1.125rem)", // Links should stand out slightly
+        mini: "clamp(0.8rem, 0.75rem + 0.2vw, 1rem)", // Smaller text, consistent scaling
+        "h2-display": "clamp(2.25rem, 1.5rem + 3vw, 6rem)", // Display style headings
+        "12px": "0.75rem",
+        "14px": "0.875rem",
+        "15px": "0.9375rem",
+        "16px": "1rem",
+        "18px": "1.125rem",
+        "20px": "1.25rem",
+        "24px": "1.5rem",
+        "42px": "2.625rem",
+        "64px": "4rem",
+      },
+      spacing: {
+        xxl: "clamp(10rem, 8rem + 5vw, 20rem)", // Generous, better-defined for large screens
+        xl: "clamp(6rem, 4rem + 4vw, 12rem)", // Smooth transition and scaling
+        l: "clamp(4rem, 3rem + 3vw, 8rem)", // Proportional for layouts
+        m: "clamp(3rem, 2rem + 2vw, 6rem)", // Medium-sized gaps for balance
+        s: "clamp(2rem, 1.5rem + 1.5vw, 4rem)", // Smaller sections that stay dynamic
+        xs: "clamp(1.5rem, 1rem + 1vw, 3rem)", // Compact spacing for smaller elements
+        xxs: "clamp(1rem, 0.75rem + 0.8vw, 2rem)", // Minor gaps for very small elements
+      },
+
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

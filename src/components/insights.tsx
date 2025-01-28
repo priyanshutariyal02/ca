@@ -8,9 +8,10 @@ import { blogData } from "@/data/blog-data";
 const Insight = () => {
   return (
     <div
-      className="w-full min-h-screen px-5 lg:px-20 py-16 flex flex-col lg:flex-row font-prosan"
+      className="w-full min-h-screen px-5 lg:px-20 py-16 flex flex-col gap-10 lg:gap-2 lg:flex-row font-prosan"
       id="insight"
     >
+      {/* Left Side - Insights Content */}
       <div className="flex-1 flex flex-col gap-5 lg:gap-0 justify-evenly relative">
         {/* Icon Background */}
         <IconBackground
@@ -19,12 +20,10 @@ const Insight = () => {
         />
 
         {/* Heading */}
-        <h1 className="text-5xl lg:text-8xl md:text-9xl font-semibold">
-          Insights
-        </h1>
+        <h1 className="text-h1 font-semibold">Insights</h1>
 
         {/* Paragraph */}
-        <p className="text-lg md:text-xl max-w-2xl leading-8 md:leading-9 mt-5">
+        <p className="text-body max-w-2xl leading-8 md:leading-9 mt-5">
           Stay ahead of the curve with our curated insights on industry trends,
           innovative solutions, and actionable strategies. From thought
           leadership articles to deep dives into emerging technologies, our
@@ -37,50 +36,78 @@ const Insight = () => {
         </Link>
       </div>
 
-      <div className="flex-1 p-0 lg:p-5 grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5 lg:mt-0">
-        {blogData.slice(0, 4).map((blogData, index) => (
+      {/* Right Side - Blog Content */}
+      <div className="flex-1 flex flex-col items-center justify-center gap-10">
+        {/* Featured Blog */}
+        {blogData.slice(-1).map((blog) => (
           <div
-            key={index}
-            className="w-full h-full flex flex-col gap-5 shadow-lg p-2 bg-white rounded-2xl"
+            key={blog.id}
+            className="w-full lg:h-[24rem] flex flex-col lg:flex-row gap-5 overflow-hidden rounded-lg shadow-lg p-5 border"
           >
-            <div className="flex w-full h-full overflow-hidden gap-3">
-              <Image
-                src={blogData.img}
-                alt={`${index}`}
-                width={500}
-                height={500}
-                className="w-1/2 object-cover rounded-xl"
-              />
-              <div className="flex flex-col gap-2 items-start">
-                <h1 className="text-base font-bold lg:text-xl lg:font-semibold">
-                  {blogData.title.split(" ").length > 5
-                    ? blogData.title.split(" ").slice(0, 5).join(" ") + "..."
-                    : blogData.title}
-                </h1>
-                {/* <p>{blogData.author}</p> */}
-              </div>
-            </div>
-            <div className="w-full h-full text-lg flex justify-between flex-col p-2 gap-3 lg:gap-0 ">
-              <p>
-                {blogData.desc[0].split(" ").length > 11
-                  ? blogData.desc[0].split(" ").slice(0, 11).join(" ") + "..."
-                  : blogData.desc}
+            <Image
+              src={blog.img}
+              alt={blog.title}
+              width={500}
+              height={300}
+              className="w-full lg:w-1/2 h-full object-cover rounded-lg"
+            />
+            <div className="flex flex-col justify-between p-5 text-white">
+              <h1 className="text-h5 font-medium">{blog.title}</h1>
+              <p className="text-neutral-600 mt-2 text-body">
+                {blog.desc[0].split(" ").length > 11
+                  ? blog.desc[0].split(" ").slice(0, 11).join(" ") + "..."
+                  : blog.desc}
               </p>
+              <Link
+                href={`/insight/${blog.id}`}
+                className="mt-4 text-link text-primary hover:text-yellow-600 transition"
+              >
+                Read More
+              </Link>
+            </div>
+          </div>
+        ))}
 
-              <div className="w-full flex justify-between items-center">
+        {/* Remaining Blogs in Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {blogData.slice(0, 2).map((blog) => (
+            <div
+              key={blog.id}
+              className="flex flex-col gap-3 p-4 border rounded-lg bg-white shadow-lg"
+            >
+              <div className="w-full flex justify-between gap-3 items-center">
+                <Image
+                  src={blog.img}
+                  alt={blog.title}
+                  width={500}
+                  height={500}
+                  className=" object-cover w-1/2 rounded-lg"
+                />
+                <h2 className="w-1/2 text-body font-medium text-neutral-800">
+                  {blog.title.split(" ").length > 6
+                    ? blog.title.split(" ").slice(0, 6).join(" ") + "..."
+                    : blog.desc}
+                </h2>
+              </div>
+              <p className="text-gray-400">
+                {blog.desc[0].split(" ").length > 11
+                  ? blog.desc[0].split(" ").slice(0, 11).join(" ") + "..."
+                  : blog.desc}
+              </p>
+              <div className="flex justify-between items-center mt-3">
                 <Link
-                  href={`/insight/${blogData.id}`}
-                  className="text-primary text-xl font-semibold hover:text-yellow-600 duration-200"
+                  href={`/insight/${blog.id}`}
+                  className="text-primary text-sm hover:text-yellow-600 transition"
                 >
                   Read More
                 </Link>
-                <p className="text-neutral-500 flex items-center gap-1">
+                <p className="text-neutral-500 flex items-center gap-1 text-sm">
                   <IconClock /> 4 days ago
                 </p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

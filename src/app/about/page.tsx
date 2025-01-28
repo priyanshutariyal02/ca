@@ -24,11 +24,11 @@ const AboutPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl font-semibold text-primary">About Us</h2>
-            <h2 className="text-5xl text-neutral-800 max-w-2xl">
+            <h2 className="text-h5 font-semibold text-primary">About Us</h2>
+            <h2 className="text-h3 font-medium text-neutral-800 max-w-2xl">
               Navigating Accounting & Taxation with Precision
             </h2>
-            <p className="text-gray-700 text-xl leading-10">
+            <p className="text-gray-700 text-body leading-10">
               At PrimeVista Global, we are more than just a service provider; we
               are your strategic partner in financial success. Founded with a
               vision to transform how businesses handle their financial
@@ -36,7 +36,7 @@ const AboutPage = () => {
               taxation, and data analytics solutions tailored to meet the
               evolving needs of global businesses.
             </p>
-            <p className="text-gray-700 text-xl leading-10">
+            <p className="text-gray-700 text-body leading-10">
               With a team of seasoned professionals and a passion for precision,
               we empower organizations to simplify complex financial tasks,
               enabling them to focus on their core competencies. Our solutions
@@ -74,7 +74,7 @@ const AboutPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-semibold text-neutral-800">
+              <h2 className="text-h3 font-semibold text-neutral-800">
                 Our Mission and Vision
               </h2>
             </motion.div>
@@ -84,8 +84,8 @@ const AboutPage = () => {
                 className="bg-white shadow-lg p-5 rounded-lg hover:shadow-xl transition-shadow flex items-center justify-center flex-col gap-3"
                 whileHover={{ scale: 1.05 }}
               >
-                <IconTargetArrow size={30} className="w-16 h-16 text-primary" />
-                <h3 className="text-3xl font-semibold">Mission Statement</h3>
+                <IconTargetArrow size={30} stroke={1.5} className="w-16 h-16 text-primary" />
+                <h3 className="text-3xl font-medium">Mission Statement</h3>
                 <p className="text-neutral-500 mt-4 leading-relaxed text-xl text-center">
                   To deliver precise, innovative, and client-focused financial
                   solutions that empower businesses to grow and succeed.
@@ -96,8 +96,8 @@ const AboutPage = () => {
                 className="bg-white p-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center gap-3"
                 whileHover={{ scale: 1.05 }}
               >
-                <IconFileInvoice size={30} className="w-16 h-16 text-primary" />
-                <h3 className="text-3xl font-semibold">Vision Statement</h3>
+                <IconFileInvoice size={30} stroke={1.5} className="w-16 h-16 text-primary" />
+                <h3 className="text-3xl font-medium">Vision Statement</h3>
                 <p className="text-neutral-500 mt-4 leading-relaxed text-xl text-center">
                   To be a global leader in financial outsourcing, driving
                   success through excellence and innovation.
@@ -109,15 +109,15 @@ const AboutPage = () => {
 
         {/* Closing Section */}
         <motion.div
-          className="mx-auto text-center py-12 px-6 w-full relative overflow-hidden bg-[#171717]"
+          className="py-12 px-6 w-full relative overflow-hidden bg-[#171717]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-semibold text-neutral-100 text-left lg:text-center">
+          <h2 className="text-h4 font-semibold text-neutral-100 text-left lg:text-center">
             Discover the PrimeVista Difference
           </h2>
-          <p className="text-neutral-100 mt-4 leading-relaxed text-base lg:text-lg text-left lg:text-center">
+          <p className="text-neutral-100 mt-4 leading-relaxed text-body max-w-7xl mx-auto text-left lg:text-center">
             With PrimeVista Global by your side, you&apos;re not just
             outsourcing a task; you&apos;re building a partnership rooted in
             trust, expertise, and shared success. Whether you need help with

@@ -12,16 +12,13 @@ const Tabs = () => {
   const toggleSidebar = () => setSidebarOpen((prev) => !prev);
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4 w-full">
+    <div className="flex flex-col sm:flex-row gap-4 w-full  top-0 relative">
       {/* Sidebar Toggle Button for small screens */}
       <button
         onClick={toggleSidebar}
-        className="sm:hidden flex items-center gap-2 bg-primary text-white py-2 px-4 rounded-md shadow-md w-max"
+        className="sm:hidden flex items-center gap-2 bg-primary text-white py-2 px-4 rounded-xl shadow-md w-max"
       >
         {sidebarOpen ? <IconX size={20} /> : <IconMenu size={20} />}
-        <span className="text-base font-medium">
-          {sidebarOpen ? "Close Menu" : "Open Menu"}
-        </span>
       </button>
 
       {/* Sidebar */}
@@ -29,7 +26,7 @@ const Tabs = () => {
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`w-full text-left py-3 px-4 text-lg font-semibold transition-all duration-300 border-r ${
+            className={`w-full text-left py-3 px-4 text-h5 font-medium transition-all duration-300 border-r ${
               activeTab === tab.id
                 ? "bg-primary text-white"
                 : " text-neutral-700 hover:bg-yellow-50"
@@ -49,13 +46,13 @@ const Tabs = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -200, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-0 left-0 z-50 w-3/4 h-full bg-white shadow-lg sm:hidden"
+            className="absolute top-0 left-0 z-30 w-3/4 lg:h-full bg-white rounded-lg shadow-lg sm:hidden"
           >
             <div className="flex flex-col gap-2 p-4 overflow-y-auto">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`w-full text-left py-2 px-3 text-base font-semibold transition-all duration-300 shadow-md rounded-lg ${
+                  className={`w-full text-h5 text-left py-2 px-3 font-medium transition-all duration-300 shadow-md rounded-lg ${
                     activeTab === tab.id
                       ? "bg-primary text-white"
                       : "bg-white text-neutral-700 hover:bg-yellow-50"

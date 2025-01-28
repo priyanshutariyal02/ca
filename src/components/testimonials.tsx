@@ -67,15 +67,18 @@ const Testimonials = () => {
 
   return (
     <div className="w-full py-10 lg:py-16 px-5 lg:px-20  text-gray-800">
+      
+      <h1 className="text-h5 text-primary text-center font-semibold">
+        Testimonials
+      </h1>
+      <h2 className="text-h2 font-medium text-center">
+        Client&apos;s Experiences
+      </h2>
+      <p className="text-neutral-600 mb-12 text-body text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
+        nemo, excepturi cupiditate corrupti ad quod optio. Eveniet excepturi.
+      </p>
       <div className="w-full">
-        <h1 className="text-4xl lg:text-7xl  text-left mb-3 flex items-end font-semibold">
-          Testimonials <p className="w-20 lg:w-28 h-2 bg-primary" />
-        </h1>
-        <p className="text-neutral-600 mb-12 text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nemo, excepturi cupiditate corrupti ad quod optio. Eveniet excepturi.
-        </p>
-
         <Slider {...sliderSettings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4">
@@ -100,6 +103,9 @@ const Testimonials = () => {
             </div>
           ))}
         </Slider>
+        <p className=" capitalize text-mini text-neutral-500 mt-16 text-center">
+          our user say <strong>Excellent</strong>
+        </p>
       </div>
     </div>
   );

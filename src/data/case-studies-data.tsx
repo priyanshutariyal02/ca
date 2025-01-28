@@ -4,10 +4,10 @@ export const tabs = [
     title: "ABC Tech Solutions",
     content: (
       <div className="w-full flex flex-col gap-5">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-h3 font-bold">
           Streamlining Financial Management for ABC Tech Solutions
         </h1>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           ABC Tech Solutions, a growing technology firm providing software
           solutions worldwide, faced challenges managing its financial records
           amidst rapid expansion. Their manual bookkeeping process was
@@ -16,7 +16,7 @@ export const tabs = [
         </p>
 
         <h2 className="text-3xl font-semibold">The Challenge:</h2>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>Time-consuming and error-prone manual bookkeeping.</li>
           <li>
             Lack of real-time financial visibility for informed decision-making.
@@ -31,11 +31,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Solution:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           PrimeVista Global partnered with ABC Tech to implement our Virtual
           Bookkeeping service, providing:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Seamless Transition:</strong> Implementation of a tailored
             cloud-based accounting system with migration of past financial data.
@@ -60,10 +60,10 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           The partnership resulted in significant improvements for ABC Tech:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Time Savings:</strong> Over 40% reduction in time spent on
             bookkeeping tasks, allowing focus on strategic initiatives.
@@ -86,7 +86,7 @@ export const tabs = [
           </li>
         </ul>
 
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           By leveraging PrimeVista Global&apos;s Virtual Bookkeeping service, ABC
           Tech Solutions streamlined their financial management, improved
           operational efficiency, and gained better control over their financial
@@ -100,10 +100,10 @@ export const tabs = [
     title: "XYZ Manufacturing Co.",
     content: (
       <div className="w-full flex flex-col gap-5">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-h3 font-bold">
           Improving Financial Accuracy for XYZ Manufacturing Co.
         </h1>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           XYZ Manufacturing Co., a large-scale industrial machinery
           manufacturer, struggled with accurate bank reconciliations due to
           complex operations and high transaction volumes. This led to
@@ -112,7 +112,7 @@ export const tabs = [
         </p>
 
         <h2 className="text-3xl font-semibold">The Challenge:</h2>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Discrepancies:</strong> Frequent errors in bank
             reconciliation due to missed transactions and misrecorded entries.
@@ -128,11 +128,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Solution:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           Partnering with PrimeVista Global, XYZ Manufacturing Co. leveraged our
           Bank Reconciliation service, which included:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Automated Reconciliation:</strong> Implementation of
             automated tools to match bank transactions against internal books,
@@ -150,11 +150,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           As a result of using PrimeVista Global&apos;s Bank Reconciliation service,
           XYZ Manufacturing Co. experienced:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Increased Accuracy:</strong> Over 90% reduction in bank
             reconciliation errors, leading to more reliable financial data.
@@ -181,10 +181,10 @@ export const tabs = [
     title: "DEF Consulting",
     content: (
       <div className="w-full flex flex-col gap-5">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-h3 font-bold">
           Simplifying Payroll Management for DEF Consulting 
         </h1>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           DEF Consulting, a growing management consultancy with a diverse,
           multi-regional team, faced increasing complexity in managing payroll
           and compliance as their workforce expanded. They needed a more
@@ -192,7 +192,7 @@ export const tabs = [
         </p>
 
         <h2 className="text-3xl font-semibold">The Challenge:</h2>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Complex Payroll:</strong> Managing varying pay rates,
             bonuses, and benefits for a diverse workforce was time-consuming and
@@ -210,11 +210,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Solution:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           DEF Consulting partnered with PrimeVista Global for our comprehensive
           Payroll & Salary service, which offered:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Automated Payroll Processing:</strong> An automated system
             calculated salaries, deductions, bonuses, and benefits with
@@ -236,11 +236,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           By choosing PrimeVista Global&apos;s Payroll & Salary service, DEF
           Consulting experienced:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Time Savings:</strong> A 50% reduction in payroll processing
             time, freeing up resources for strategic projects.
@@ -268,10 +268,10 @@ export const tabs = [
     title: "GHI Retail Group",
     content: (
       <div className="w-full flex flex-col gap-5">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-h3 font-bold">
           Providing Strategic Financial Leadership for GHI Retail Group
         </h1>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           GHI Retail Group, an expanding retail business with multiple
           locations, faced challenges managing financial planning, cash flow
           forecasting, and strategic decision-making without dedicated financial
@@ -280,7 +280,7 @@ export const tabs = [
         </p>
 
         <h2 className="text-3xl font-semibold">The Challenge:</h2>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Financial Strategy Gaps:</strong> Lack of high-level
             strategic guidance impacted decision-making, leading to suboptimal
@@ -297,11 +297,11 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Solution:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           GHI Retail Group chose PrimeVista Global&apos;s Virtual CFO service to
           provide the necessary strategic leadership and financial expertise:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Strategic Financial Leadership:</strong> Collaboration with
             management to develop long-term financial strategies aligned with
@@ -325,10 +325,10 @@ export const tabs = [
         </ul>
 
         <h2 className="text-3xl font-semibold">The Outcome:</h2>
-        <p className="max-w-4xl text-lg">
+        <p className="max-w-4xl text-link">
           After partnering with PrimeVista Global, GHI Retail Group experienced:
         </p>
-        <ul className="list-disc pl-6 max-w-4xl text-lg">
+        <ul className="list-disc pl-6 max-w-4xl text-link">
           <li>
             <strong>Improved Financial Visibility:</strong> A clearer
             understanding of financial health, enabling better informed

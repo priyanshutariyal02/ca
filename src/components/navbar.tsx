@@ -5,11 +5,11 @@ import React, { useState, useEffect } from "react";
 const navLinks = [
   {
     name: "About Us",
-    link: "about",
+    link: "/about",
   },
   {
     name: "Services",
-    link: "service",
+    link: "/services",
   },
   {
     name: "Case Studies",
@@ -94,7 +94,7 @@ const Navbar = () => {
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } lg:flex flex-col lg:flex-row items-center gap-5 lg:gap-5 xl:gap-10 text-xl text-white absolute lg:relative top-16 lg:top-0 left-0 lg:left-auto w-full lg:w-auto bg-[#171717] lg:bg-transparent py-5 lg:py-0`}
+        } lg:flex flex-col lg:flex-row items-center gap-5 lg:gap-5 xl:gap-10 text-xl text-white absolute lg:relative top-16 lg:top-0 left-0 lg:left-auto w-full lg:w-auto bg-[#171717] lg:bg-transparent py-5 lg:py-0 text-link`}
       >
         {navLinks.map((item, index) => (
           <a

@@ -54,7 +54,7 @@ const Faq = () => {
   return (
     <div className="w-full px-5 lg:px-12 py-16">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-12">
-        <h1 className="text-6xl font-semibold text-neutral-700">
+        <h1 className="text-h2 font-semibold text-neutral-700">
           FAQs
         </h1>
         {/* Accordion component should wrap AccordionItem */}
@@ -63,7 +63,7 @@ const Faq = () => {
           {faqData.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               {/* AccordionTrigger and AccordionContent should be inside AccordionItem */}
-              <AccordionTrigger className="text-xl lg:text-2xl">{item.que}</AccordionTrigger>
+              <AccordionTrigger className="text-h5">{item.que}</AccordionTrigger>
               <AccordionContent>
                 {Array.isArray(item.ans) ? (
                   <ul className="list-disc pl-5 space-y-2">
@@ -72,7 +72,7 @@ const Faq = () => {
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-lg max-w-5xl">{item.ans}</p>
+                  <p className="text-body leading-8 max-w-5xl">{item.ans}</p>
                 )}
               </AccordionContent>
             </AccordionItem>

@@ -33,26 +33,26 @@ const Contact = () => {
       <div className="w-full p-5 lg:px-28 py-16 flex flex-col lg:flex-row lg:justify-between gap-10">
         <div className="flex flex-col gap-10 max-w-2xl">
           <div className="flex flex-col gap-5">
-            <h1 className="text-2xl font-bold text-primary">Contact Us</h1>
-            <p className="text-3xl md:text-4xl lg:text-7xl text-neutral-800">
+            <h1 className="text-h5 font-bold text-primary">Contact Us</h1>
+            <p className="text-h3 font-medium text-neutral-800">
               Get in Touch With Us & Let&apos;s Talk
             </p>
           </div>
           <div className="flex flex-col gap-5 divide-y">
-            <h2 className="text-xl lg:text-3xl font-semibold">Work Hours: </h2>
+            <h2 className="text-h5 font-semibold">Work Hours: </h2>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-base lg:text-xl font-semibold">
+              <p className="text-body font-medium">
                 Monday-Friday
               </p>
-              <p className="flex items-center justify-center gap-3">
+              <p className="flex items-center font-medium text-link justify-center gap-3">
                 <IconClock /> 9:00 AM - 17:00 PM
               </p>
             </div>
             <div className="flex items-center justify-between pt-4">
-              <p className="text-base lg:text-xl font-semibold">
+              <p className="text-body font-medium">
                 Saturday-Sunday
               </p>
-              <p className="flex items-center justify-center gap-3">
+              <p className="flex items-center font-medium text-link justify-center gap-3">
                 <IconClock /> Close
               </p>
             </div>
